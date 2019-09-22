@@ -1,118 +1,221 @@
-@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
-html {
-    height: 100%;
+
+    
+: :selection {
+    .background:  transparent;
 }
 
+::-moz-selection {
+    background:  transparent;
+}
+
+::-webkit-selection {
+    background:  transparent;
+}
+::scrollbar 
+{
+    width: 10px;
+    z-index: 100;
+}
+ 
+::scrollbar-track 
+{
+    background: #ddd;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+::scrollbar-thumb 
+{
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    width: 8px;
+        background : #666;
+}
+::-moz-scrollbar 
+{
+    width: 10px;
+    z-index: 100;
+}
+ 
+::-moz-scrollbar-track 
+{
+    background: #ddd;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+::-moz-scrollbar-thumb 
+{
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    width: 8px;
+        background : #666;
+}
+::-webkit-scrollbar 
+{
+    width: 10px;
+    z-index: 100;
+}
+ 
+::-webkit-scrollbar-track 
+{
+    background: #ddd;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+}
+::-webkit-scrollbar-thumb 
+{
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+    width: 8px;
+        background : #666;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  "Raleway";
+     font-weight: 200;
+     font-style: normal;
+      src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v9/8KhZd3VQBtXTAznvKjw-k8DdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
+      font-
+}
 body {
-    height: 100%;
-    background: black;
-    margin: 0;
-    padding: 3em;
-    font: .8em/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
-    color: white;
+    overflow-x: hidden;
+    height:500%;
+    background-attachment: fixed;
+    background-size:cover;
+background-position: center center;
+background-repeat:no-repeat;
+/*background-color:#192327;*/
+background-color: #4BD8BB;
+color: white;
+
 }
-
-a {
-  color: white;
-
-  &:hover {
-    color: limegreen;
-  }
+.home {
+    /*margin-top: 5%;*/
+    opacity:  0.0;
+    color: #eee;
+    width: 100%;
 }
-
-.filterwrapper {
-    position: absolute;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0;
+.title {
+    font-size: 48pt;
+    font-weight:  100;
+    margin-top: 10px;
 }
-
-.svgtext {
-    display: block;
+.page{
+    height: 20%;
+}
+.home_desc {
+    font-size: 17pt;
+    margin-top: 10px;
+}
+.picture {
+	/*  border radius can be hundred for circle
+	and 10 for curved rectangle*/
+    border-radius: 0%;
+    width: 20%;
+    border: 5px solid #dedede;
+    
+}
+.menu {
+    color: #fff;
+    text-align:  center;
+    background:  #333;
+    position:  fixed;
+    width:  100%;
+    bottom: 0;
+    border-top: 5px solid #242424;
+    .}
+.menu ul {
+    list-style:  none;
+}
+.menu ul li {
+    display:  inline-block;
+    padding:  15px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
     position: relative;
-    overflow: hidden;
-    margin: 0 auto;
+    top: 300px;
 }
-
-.intro {
-    margin-bottom: 3em;
+.menu ul li:hover {
+    /*border-top: 5px solid #39c;  */
+    background:  #008bec;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
 }
-
-hr {
-    height: 0;
-    border-bottom: solid #cccccc 1px;
+.active{
+    background: #BB5009;
 }
-
-.glitch-filter-example {
-    display: block;
-    position: relative;
-    text-align: center;
-    margin: 0;
-    padding: 4em 0 2em;
-    min-width: 490px;
+.home_desc {
+    font-size: 125%;
 }
-
-.glitch-filter-example__heading {
-    margin: 0;
-    margin-bottom: 1em;
-    padding: 0;
-    display: block;
-    position: relative;
+.title {
+    /*font-size: 400%;*/
+    font-weight: 100;
 }
-
-.glitch-filter-example__filtered-text {
-    filter: url(#filter);
-    fill: white;
-    font-family: 'Share Tech Mono', sans-serif;
-    font-size: 100px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: block;
+.about page > img {
+    size:10px;
 }
-
-.top-r,
-.bot-r,
-.top-g,
-.bot-g {
-    stroke: #ffffff;
+.sub{
+    font-weight: 100;
+    color:#fff;
+    margin-top:20px;
+    font-size:48pt;
+    text-decoration: underline;
 }
-
-.top-r {
-    stroke-width: 100px;
-    animation: topani 3.5s linear infinite;
+.serv{
+    margin-top:30px;
+    padding:50px;
 }
-
-.bot-r {
-    stroke-width: 100px;
-    animation: botani 4s linear infinite;
+.serv li{
+    display: inline-block;
+    margin-left:50px;
+    font-size:18pt;
+    font-weight: 100;
+    color:#fff;
+    padding-bottom:50px;
 }
-
-.top-g {
-    stroke-width: 50px;
-    animation: topani 4s linear reverse infinite;
+.clear{
+    clear: both;
 }
-
-.bot-g {
-    stroke-width: 50%;
-    animation: botani 3.5s linear reverse infinite;
+.ser{
+    /*width: 15%;*/
 }
-
-@mixin createRandomKeyframes( $numberOfKeys ) {
-    $delta: round(100/$numberOfKeys);
-
-    @for $i from 1 through $numberOfKeys {
-        $time: ($i*$delta - random($delta)) +'%';
-        #{$time} {
-            stroke-width: random(200) + px;
-        }
+center {
+    color:#fff;
+}
+title > link {
+    size :600px ;
+}
+#sponsor{
+    color:#fff;
+}
+@media screen and (max-width: 850px){
+    .serv li{
+        width: 100%;
     }
+    
+   
+}
+.inner {
+	border-radius:0%;
+	width: 20%;
+    border: 5px solid #dedede;
+}
+span {
+    color: blue;
+ }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v9/CcKI4k9un7TZVWzRVT-T88DdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaI8DdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
 }
 
-@keyframes topani {
-    @include createRandomKeyframes( 10 + random(10) );
-}
-
-@keyframes botani {
-    @include createRandomKeyframes( 10 + random(10) );
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v9/8KhZd3VQBtXTAznvKjw-k8DdSZkkecOE1hvV7ZHvhyU.ttf) format('truetype');
 }
