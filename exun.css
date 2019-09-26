@@ -104,7 +104,7 @@ color: white;
 .picture {
 	/*  border radius can be hundred for circle
 	and 10 for curved rectangle*/
-    border-radius: 0%;
+    border-radius: 100%;
     width: 20%;
     border: 5px solid #dedede;
     
