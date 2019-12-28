@@ -79,7 +79,7 @@ body {
 background-position: center center;
 background-repeat:no-repeat;
 /*background-color:#192327;*/
-background-color: #4BD8BB;
+background-color: #4232a8;
 color: white;
 
 }
@@ -104,8 +104,8 @@ color: white;
 .picture {
 	/*  border radius can be hundred for circle
 	and 10 for curved rectangle*/
-    border-radius: 100%;
-    width: 20%;
+    border-radius: 50%;
+    width: 15.5%;
     border: 5px solid #dedede;
     
 }
@@ -198,7 +198,7 @@ title > link {
     border: 5px solid #dedede;
 }
 span {
-    color: blue;
+    color: #32a861;
  }
 @font-face {
   font-family: 'Raleway';
