@@ -107,7 +107,11 @@ color: white;
     border-radius: 50%;
     width: 15.5%;
     border: 5px solid #181717;
-    
+}
+.picture2 {
+    border-radius: 50%;
+    width: 65%;
+    border: 5px solid #181717;
 }
 .menu {
     color: #fff;
