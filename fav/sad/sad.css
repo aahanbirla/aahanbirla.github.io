@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+$bg-color: #4242e6;
+$glitch-bg-color: $bg-color;
+
+html, body {
+  height: 100%;
+}
+span{
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  font-family: 'Raleway';
+  font-size: 15px;
+  font-weight: bold;
+  color: #a5a5ff;
+  background-color: #dac3c3;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.glitch {
+  position: relative;
+  margin: 0 auto;
+  background: $glitch-bg-color;
+}
